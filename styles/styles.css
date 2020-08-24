@@ -1,0 +1,663 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+
+/* CSS Styling */
+
+/*
+White #FFF (255, 255, 255)
+Vivid Purple #9200FF (146, 0, 255)
+Royal Purple #3D0369 (61, 3, 105)
+Dark Indigo #0F0632 (15, 6, 50)
+Almost Black #08080B (8, 8, 11)
+
+======================================
+======================================
+
+Heading (Thunder Force Stadium)
+iceberg, regular, 80px
+center, line height: 80px
+
+Headings (performing .., new experience.., get your...)
+Iceberg, Regular, 52px
+
+Subheading (presented by hot cops)
+Montserrat, Regular, 35px
+Center
+
+Headings (location, tickets, reach out)
+Montserrat, Bold, 30px
+Center
+
+buttons (anchor)
+iceberg, regular, 25px
+center, line height:29px
+
+body text
+
+montserrat, regular, 20px
+line height: 29px
+*/
+/*font-family: 'Iceberg', 'Montserrat', sans-serif;*/
+
+
+
+
+/* General Page Styling */
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    line-height: 29px;
+    color: #fff;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  padding: 15px;
+  font-size: 2rem;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 45%;
+}
+
+.juno-button {
+    padding: 10px 25px;
+    border-style: none;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 29px;
+    color: white;
+    font-family: 'Iceberg', sans-serif;
+    background-color: #9200FF;
+}
+
+/* Main Navigation CSS */
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+}
+
+/* Header Section CSS */
+
+header {
+    background-image: url(../assets/image-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.header-content {
+    position: relative;
+}
+
+.header-content i {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.header-icons {
+    position: absolute;
+    width: 25px;
+    margin-right: 50px;
+    top: 45%;
+    right: 0;
+}
+
+.header-text {
+    padding-top: 150px;
+}
+
+h1 {
+    font-family: 'Iceberg', sans-serif;
+    font-size: 8rem;
+    width: 400px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    color: #fff;
+}
+
+h2 {
+   font-family: 'Iceberg', sans-serif;
+   font-size: 5.2rem;
+   color: #fff; 
+}
+
+header p {
+    background-color: #9200FF;
+    color: white;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 450px;
+}
+
+/* First Row of 4 Card Section CSS */
+
+.row1-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.four-cards-content1 {
+    background-color: #0F0632;
+    padding-top: 200px;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+    width: 50%;
+    float: left;
+}
+
+.four-cards-image1 {
+    width:50%;
+    float: right;
+}
+
+/* Styling for Both Sections */
+
+.four-cards-content1 p, 
+.four-cards-content2 p {
+    padding: 15px 0 50px 0;
+}
+
+/* Second Row of 4 Card Section CSS */
+
+.row2-container {
+    overflow: hidden;
+    width:100%;
+}
+
+.four-cards-image2{
+    width:50%;
+    float: left;
+}
+
+.four-cards-content2 {
+    background-color: #0F0632;
+    padding-top: 200px;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+    width: 50%;
+    float: left;
+}
+
+/* Get Your Tickets Section CSS */
+
+.get-your-tickets {
+    background-color: #08080B;
+    padding: 100px 0;
+}
+
+.get-your-tickets-img,
+.get-your-tickets-content {
+    float: left;
+}
+
+.get-your-tickets-img {
+    width: 30%;
+}
+
+.get-your-tickets-content {
+    width: 70%;
+    padding: 0 50px;
+}
+
+.get-your-tickets-content p {
+    padding: 20px 0 35px 0;
+}
+
+/* Icon Section CSS */
+
+i {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.icons-section {
+    background-color: #3D0369;
+    padding: 100px 0;
+}
+
+.icons-container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icons-section li {
+    display: inline-block;
+}
+
+.icons-container li {
+    text-align: center;
+    padding: 50px;
+}
+
+/* The Gram Section CSS */
+
+.the-gram {
+    background-color: #0F0632;
+}
+
+.the-gram h2 {
+    text-align: center;
+    padding: 75px 0;
+}
+
+.the-gram li {
+    float: left;
+    width: calc((100% - 80px) / 3);
+    margin-right: 40px;
+    margin-bottom: 75px;
+}
+
+.the-gram li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+/* Footer Nav and General Footer CSS */
+
+footer {
+    background-color: #3D0369;
+}
+
+.footer-nav-container {
+    text-align: center;
+}
+
+.footer-nav {
+    width: 50%;
+    padding: 50px;
+    display: inline-block;
+}
+
+.footer-nav li {
+    display: inline-block;
+    list-style: none;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+}
+
+.footer-container {
+    padding-bottom: 75px;
+}
+
+/* Contact Div CSS */
+
+.contact {
+    float: left;
+    width:50%;
+    padding-left: 75px;
+}
+
+.contact h2 {
+    padding-bottom: 15px;
+}
+
+.contact p {
+    line-height: 29px;
+}
+
+/* Stay Updated Div CSS */
+
+.stay-updated {
+    float: right;
+    width: 50%;
+}
+
+.stay-updated p {
+    padding: 10px 0;
+}
+
+/* E_mail Form CSS */
+
+#e-mail {
+    border: 1px solid white;
+    outline: none;
+    width: 60%;
+    padding: 15px 35px;
+    font-size: 2rem;
+}
+
+#subscribe {
+    border-style: none;
+    padding: 10px 25px;
+    font-size: 3rem;
+    margin-left: -3px;
+    vertical-align: -3px;
+    color: white;
+    font-family: 'Iceberg', sans-serif;
+    background-color: #9200FF;
+}
+
+/* Copyright Div CSS */
+
+.copyright {
+    background-color: #0F0632;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+
+
+@media (max-width: 1600px) {
+    .skip-link {
+        left: 44%;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    .four-cards-content1,
+    .four-cards-content2 {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .skip-link {
+        left: 41%;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .four-cards-content1,
+    .four-cards-content2 {
+        padding-top: 50px;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .skip-link {
+        left: 40%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .get-your-tickets {
+        padding: 50px 0;
+    }
+
+    .icons-section {
+        padding: 50px;
+    }
+
+    .icons-container {
+        width: 100%;
+    }
+
+    .juno-button {
+        padding: 10px 15px;
+        border-style: none;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 29px;
+        color: white;
+        font-family: 'Iceberg', sans-serif;
+        background-color: #9200FF;
+    }
+
+    .four-cards-content1 p, 
+    .four-cards-content2 p {
+        padding: 15px 0 25px 0;
+    }
+
+    .footer-nav {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .footer-nav li {
+        font-size: 2rem;
+    }
+
+    .copyright {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .skip-link {
+        left: 37%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .wrapper {
+        width: 92%;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+    .four-cards-content1,
+    .four-cards-content2,
+    .four-cards-image1,
+    .four-cards-image2 {
+        float: none;
+        width: 100%;
+    }
+
+    .four-cards-content1,
+    .four-cards-content2 {
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+
+    .four-cards-content1 p,
+    .four-cards-content2 p {
+        padding-bottom: 50px;
+    }
+
+    .button-holder {
+        text-align: center;
+    }
+
+    .juno-button {
+        padding: 20px 40px;
+        border-style: none;
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 29px;
+        color: white;
+        font-family: 'Iceberg', sans-serif;
+        background-color: #9200FF;
+    }
+
+    .get-your-tickets-content,
+    .get-your-tickets-img {
+        float: none;
+        width: 100%;
+    }
+
+    .get-your-tickets-content {
+        padding: 50px 25px 50px 25px;
+    }
+
+    .get-your-tickets-content p {
+        font-size: 2rem;
+    }
+
+    .contact {
+        padding-left: 40px;
+    }
+
+    .contact p,
+    .stay-updated p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 80vh;
+    }
+
+    .skip-link {
+        left: 33%;
+    }
+
+    .get-your-tickets {
+        padding-bottom: 0;
+    }
+
+    .icons-section i {
+        font-size: 6rem;
+    }
+
+    .icons-section p {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    .icons-section li {
+        display: block;
+        padding: 25px;
+    }
+
+    .gallery li:nth-of-type(3n) {
+        display: none;
+    }
+
+    .gallery li {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+
+    .gallery li:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    footer h2 {
+        font-size: 4rem;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .contact {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .stay-updated p{
+        margin-bottom: 15px;
+    }
+
+    .contact,
+    .stay-updated {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+
+    .stay-updated p,
+    .contact p {
+        font-size: 2rem;
+    }
+
+    #e-mail {
+        width: 90%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #subscribe {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 90%;
+    }
+
+    .copyright {
+        padding: 20px 0;
+        font-size: 1.8rem;
+    }
+}
