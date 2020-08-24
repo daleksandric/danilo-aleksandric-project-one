@@ -47,6 +47,14 @@ line height: 29px
 
 
 
+/* 
+   The idea to use negative margin / padding to keep text-centric divs the same height as an image was taken from various sources. 
+   The one I ended up using can be found on this website. https://www.thetopsites.net/article/53461685.shtml
+   I'm not sure how to credit properly so I just left this comment here.
+*/
+
+
+
 
 /* General Page Styling */
 
